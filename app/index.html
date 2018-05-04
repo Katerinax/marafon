@@ -17,6 +17,7 @@
     <![endif]-->
 </head>
 <body>
+	<div class="wrapperrr">
 	<header >
 		<div class="full-screen" id="main">
 			<div class="center-block-main clearfix">
@@ -32,7 +33,7 @@
 					</nav>
 					<div class="block-phone clearfix">
 						<img src="images/Call.png" alt="phone">
-						<ul>
+						<ul class="clearfix">
 							<li>(066) 518-24-96</li>
 							<li>(068) 314-55-09</li>
 							<li class="mail"><i class="icon-mail-alt"></i>marafon-sport@ukr.net</li>
@@ -46,21 +47,25 @@
 					<p><i class="icon-right-hand"></i>баскетбольные и <br>
 		          	<span class="tx-down">волейбольные площадки</span></p>
 		        </div>
-	       	 	<form class="clearfix ajax-contact-form" action="contact.php">
-	       	 		<label>Ваше имя:</label><br>
-	        		<input type="text" name="name" placeholder="Введите ваше имя" required="required">
-	        		<label>Телефон:</label><br>
-	        		<input type="tel" name="tel" placeholder="Введите номер телефона" required="required">
-	        		<input class="btn" type="submit" value="Заказать">
-	       	 	</form>
+			    <div class="note"> 	
+					<div class="fields">
+				       	 <form class="clearfix ajax-contact-form" action="Contact">
+				       	 	<label>Ваше имя:</label><br>
+				        	<input type="text" name="name" placeholder="Введите ваше имя" required="required">
+				        	<label>Телефон:</label><br>
+				        	<input type="tel" name="tel" placeholder="Введите номер телефона" required="required">
+				        	<input class="btn" type="submit" value="Заказать">
+				       	</form>
+					</div>
+				</div>
        	 	</div>
-       	 </div>
-       	 <div class="bottom-line">
-        	<div class="btm-ln center-block-main">
-        		<p class="item"><span>10 лет</span><br> успешной работы</p>
-        		<p class="item"><span>100 объектов</span> <br>более 100 построенных площадок</p>
-        		<p class="item"><span>100т. кв.м</span><br> застеленных поверхностей</p>
-        	</div>
+       	 	<div class="bottom-line">
+        		<div class="btm-ln center-block-main">
+        			<p class="item"><span>10 лет</span><br> успешной работы</p>
+        			<p class="item"><span>100 объектов</span> <br>более 100 построенных площадок</p>
+        			<p class="item"><span>100т. кв.м</span><br> застеленных поверхностей</p>
+        		</div>
+        	</div>	
         </div>
 	</header>			
 	<center>
@@ -109,7 +114,7 @@
 							  </div>
 							  <div class="modal-body">
 								<div class="row">
-									<div class=>
+									<div>
 										<img src="images/2.jpg" alt="Первая работа"/>
 									</div>
 									<div class="col-7">
@@ -140,7 +145,7 @@
 									</div>
 									<div class="col-7">
 										<h5>Ограждения спортивных площадок</h5>
-										<p>Описание сайта</p>
+										<p>Ограждение для спортивных площадок монтируется из металлических секций, которые крепятся на стальные квадратные столбы. Они производятся из углеродистой стали с полиэфирным покрытием, поэтому не ржавеют и выдают высокую механическую прочность. Крепление панелей специальными фиксаторами позволяют снизить шум и силу удара при попадании мяча. Высота ограждения варьируется от 3м до 6м.</p>
 									</div>
 								</div>	
 							  </div>
@@ -327,7 +332,7 @@
 				</ul>
 			</nav>
 			<div class="block-phone white clearfix">
-				<img src="images/Call out2.png" alt="phone">
+				<img src="images/Call-out2.png" alt="phone">
 				<ul class="clearfix">
 					<li>(093) 000-00-00</li>
 					<li>(095) 000-00-00</li>
@@ -344,23 +349,6 @@
 	<script>
         new WOW().init();
     </script>
-   <!-- <script>
-    	$(document).ready(function(){
-
-    		$("#form").submit(function(){
-    			$.ajax({
-    				type: "POST",
-    				url: "mail.php",
-    				data: $(this).serialize()
-    			}).done(function(){
-    				$(this).find("input").val("");
-    				alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
-    				$("#form").trigger("reset");
-    			});
-    			return false;
-    		});
-
-    	});
-    </script>-->
+   </div>
 </body>
 </html>
